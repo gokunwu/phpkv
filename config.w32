@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("phpkv", "for phpkv support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("phpkv", "enable phpkv support", "no");
+
+if (PHP_PHPSEGMENT != "no") {
+	EXTENSION("phpkv", "phpkv.cpp");
+}
+
